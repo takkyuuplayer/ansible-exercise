@@ -1,0 +1,23 @@
+---
+- name: install "{{ item }}"
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - ack-grep
+    - apache2-utils
+    - curl
+    - direnv
+    - fish
+    - git
+    - git-core
+    - htop
+    - jq
+    - locales
+    - sqlite3
+    - tree
+    - vim
+    - wget
+    - whois
+    - zip
+    - zsh
