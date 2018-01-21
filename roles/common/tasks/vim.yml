@@ -1,0 +1,7 @@
+---
+- name: install "{{ vim }}"
+  apt_repository:
+    repo: ppa:jonathonf/vim
+  apt:
+    name: vim
+    state: latest

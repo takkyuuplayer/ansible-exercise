@@ -7,7 +7,6 @@
     - ack-grep
     - apache2-utils
     - curl
-    - direnv
     - fish
     - git
     - git-core
@@ -16,8 +15,9 @@
     - locales
     - sqlite3
     - tree
-    - vim
     - wget
     - whois
     - zip
     - zsh
+  tasks:
+    - import_tasks: ../vim.yml
