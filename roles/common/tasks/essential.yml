@@ -19,5 +19,3 @@
     - whois
     - zip
     - zsh
-  tasks:
-    - import_tasks: ../vim.yml
