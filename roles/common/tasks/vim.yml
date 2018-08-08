@@ -2,7 +2,7 @@
 - name: install vim
   apt_repository:
     repo: ppa:jonathonf/vim
-- nae: install vim
+- name: install vim
   apt:
     name: vim
     state: latest
