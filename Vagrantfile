@@ -9,9 +9,10 @@ Vagrant.configure("2") do |config|
     vb.memory = "1024"
   end
 
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get update
-    sudo apt-get install -y python
-  SHELL
-
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.become = true
+    ansible.install_mode = "pip"
+    ansible.playbook = "site.yml"
+    ansible.version = "latest"
+  end
 end

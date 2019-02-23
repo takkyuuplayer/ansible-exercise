@@ -1,5 +1,0 @@
----
-- hosts: all
-  tasks:
-    - import_tasks: ../roles/common/tasks/essential.yml
-    - import_tasks: ../roles/common/tasks/vim.yml

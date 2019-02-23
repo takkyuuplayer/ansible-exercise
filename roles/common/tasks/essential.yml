@@ -1,21 +1,13 @@
 ---
-- name: install "{{ item }}"
-  apt:
-    name: "{{ item }}"
+- name: Install essential packages.
+  package:
     state: latest
-  with_items:
-    - ack-grep
-    - apache2-utils
+    name: "{{ item }}"
+  loop:
+    - build-essential
     - curl
-    - fish
-    - git
-    - git-core
-    - htop
-    - jq
-    - locales
-    - sqlite3
-    - tree
+    - ntp
+    - tmpreaper
+    - tzdata
+    - unzip
     - wget
-    - whois
-    - zip
-    - zsh
