@@ -1,6 +1,7 @@
 version: 2
 jobs:
-  machine: true
-  steps:
-    - checkout
-    - docker build .
+  build:
+    machine: true
+    steps:
+      - checkout
+      - run: docker build .
