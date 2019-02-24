@@ -1,6 +1,6 @@
 FROM geerlingguy/docker-debian9-ansible
 
-COPY . /tmp/provisioner
+COPY ansible.cfg hosts.ini site.yml roles /tmp/provisioner/
 
 WORKDIR /tmp/provisioner
 

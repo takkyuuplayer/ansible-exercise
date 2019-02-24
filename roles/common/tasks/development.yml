@@ -1,20 +1,19 @@
 ---
-- name: install "{{ item }}"
+- name: Install development tools
   apt:
-    name: "{{ item }}"
+    name:
+      - ack-grep
+      - apache2-utils
+      - dstat
+      - git
+      - git-core
+      - jq
+      - screen
+      - sqlite3
+      - tmux
+      - tree
+      - vim
+      - zip
+      - zsh
     state: latest
-  with_items:
-    - ack-grep
-    - apache2-utils
-    - dstat
-    - git
-    - git-core
-    - jq
-    - screen
-    - sqlite3
-    - tmux
-    - tree
-    - zip
-    - zsh
 - import_tasks: ctags.yml
-- import_tasks: vim.yml
