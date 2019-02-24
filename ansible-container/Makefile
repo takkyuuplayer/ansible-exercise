@@ -5,4 +5,4 @@ run:
 	ansible-container run
 
 push:
-	ansible-container push  --push-to https://dockerhub.io/takkyuuplayer
+	ansible-container push  --push-to https://docker.io/takkyuuplayer
